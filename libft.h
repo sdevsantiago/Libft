@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2024/11/17 16:54:44 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/01/19 16:49:22 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,23 @@ char	*ft_strncpy(char *dest, const char *src, size_t n);
 char	*ft_uitoa(unsigned int n);
 char	*ft_uitoa_base(unsigned int n, const char *base);
 char	*ft_ultoa_base(unsigned long n, const char *base);
+
+// Doubly linked list
+typedef struct s_dlist
+{
+	void			*content;
+	struct s_dlist	*next;
+	struct s_dlist	*previous;
+}					t_dlist;
+
+t_dlist	*ft_dlstlast(t_dlist *dlst);
+t_dlist	*ft_dlstmap(t_dlist *dlst, void *(*f)(void *), void (*del)(void *));
+t_dlist	*ft_dlstnew(void *content);
+void	ft_dlstadd_back(t_dlist **dlst, t_dlist *new);
+void	ft_dlstadd_front(t_dlist **dlst, t_dlist *new);
+void	ft_dlstclear(t_dlist **dlst, void (*del)(void *));
+void	ft_dlstdelone(t_dlist *dlst, void (*del)(void *));
+void	ft_dlstiter(t_dlist *dlst, void (*f)(void *));
+int		ft_dlstsize(t_dlist *dlst);
 
 #endif

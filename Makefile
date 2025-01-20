@@ -6,7 +6,7 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2024/11/17 16:54:24 by sede-san         ###   ########.fr        #
+#    Updated: 2025/01/20 13:43:09 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,6 +79,15 @@ SRC_B= \
 
 # Aditional functions
 SRC_A= \
+    ft_dlstadd_back.c \
+    ft_dlstadd_front.c \
+    ft_dlstclear.c \
+    ft_dlstdelone.c \
+    ft_dlstiter.c \
+    ft_dlstlast.c \
+    ft_dlstmap.c \
+    ft_dlstnew.c \
+    ft_dlstsize.c \
 	ft_free.c \
 	ft_iscntrl.c \
 	ft_islower.c \
