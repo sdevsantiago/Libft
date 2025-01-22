@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 18:33:47 by sede-san          #+#    #+#             */
-/*   Updated: 2025/01/20 13:11:18 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/01/22 12:04:42 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,7 @@ void	ft_dlstclear(t_dlist **lst, void (*del)(void *))
 	{
 		node = *lst;
 		*lst = (*lst)->next;
-		del(node->content);
-		free(node);
+		ft_dlstdelone(node, del);
 	}
 	*lst = NULL;
 }
