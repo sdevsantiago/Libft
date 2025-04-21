@@ -1,35 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_cdlstadd_back.c                                 :+:      :+:    :+:   */
+/*   ft_atol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/22 19:08:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/02/05 23:31:41 by sede-san         ###   ########.fr       */
+/*   Created: 2025/02/05 10:44:04 by sede-san          #+#    #+#             */
+/*   Updated: 2025/02/06 00:18:26 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_cdlstadd_back(t_cdlist **lst, t_cdlist *new)
+/* Converts a string into an integer.  */
+long	ft_atol(const char *str)
 {
-	t_cdlist	*last;
+	int		minus;
+	long	num;
 
-	if (!lst || !new)
-		return ;
-	if (!*lst)
+	minus = 1;
+	num = 0;
+	while (ft_isspace(*str))
+		str++;
+	if (*str == '-' || *str == '+')
 	{
-		*lst = new;
-		new->next = new;
-		new->previous = new;
+		if (*str == '-')
+			minus = -minus;
+		str++;
 	}
-	else
+	while (*str >= '0' && *str <= '9')
 	{
-		last = ft_cdlstlast(*lst);
-		last->next = new;
-		new->next = *lst;
-		new->previous = last;
-		(*lst)->previous = new;
+		num = num * 10 + (*str - '0');
+		str++;
 	}
+	return (num * minus);
 }

@@ -6,7 +6,7 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2025/01/20 13:43:09 by sede-san         ###   ########.fr        #
+#    Updated: 2025/04/21 19:37:46 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,8 @@ CC = cc
 
 # Compilation flags
 CFLAGS = -Wall -Wextra -Werror
+
+MAKE = make --no-print-directory
 
 # ****************************** Source files ******************************** #
 # Mandatory part 1
@@ -79,6 +81,25 @@ SRC_B= \
 
 # Aditional functions
 SRC_A= \
+	ft_atol.c \
+	ft_cdlstadd_back.c \
+    ft_cdlstadd_front.c \
+    ft_cdlstclear.c \
+    ft_cdlstdelone.c \
+    ft_cdlstiter.c \
+    ft_cdlstlast.c \
+    ft_cdlstmap.c \
+    ft_cdlstnew.c \
+    ft_cdlstsize.c \
+	ft_clstadd_back.c \
+    ft_clstadd_front.c \
+    ft_clstclear.c \
+    ft_clstdelone.c \
+    ft_clstiter.c \
+    ft_clstlast.c \
+    ft_clstmap.c \
+    ft_clstnew.c \
+    ft_clstsize.c \
     ft_dlstadd_back.c \
     ft_dlstadd_front.c \
     ft_dlstclear.c \
@@ -120,7 +141,7 @@ OBJ_A = $(SRC_A:.c=.o)
 # Compile object files
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
-	
+
 # ********************************* Rules ************************************ #
 # Compile all
 all: $(NAME)

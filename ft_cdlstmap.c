@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 18:50:18 by sede-san          #+#    #+#             */
-/*   Updated: 2025/01/22 19:51:25 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/02/05 10:07:52 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ t_cdlist	*ft_cdlstmap(t_cdlist *lst, void *(*f)(void *), void (*del)(void *))
 	t_cdlist	*new_list;
 	t_cdlist	*node;
 	t_cdlist	*first;
-	void		*content;
 
 	if (!lst)
 		return (NULL);
