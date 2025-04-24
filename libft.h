@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/03/06 02:15:40 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/04/24 20:40:26 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 # include <stdlib.h>
 # include <limits.h>
 # include <unistd.h>
+# include "errors.h"
+# include "colors.h"
 
 /* **************************** Part 1 functions **************************** */
 
@@ -83,6 +85,7 @@ int			ft_lstsize(t_list *lst);
 void		ft_free(void **ptr);
 void		ft_putchar(char c);
 void		ft_putendl(char *s);
+void		ft_puterror(t_errors err_num);
 void		ft_putnbr(int n);
 void		ft_putstr(char *s);
 void		ft_swap(void *a, void *b);

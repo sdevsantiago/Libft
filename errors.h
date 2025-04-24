@@ -1,0 +1,34 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   errors.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/24 19:22:28 by sede-san          #+#    #+#             */
+/*   Updated: 2025/04/24 20:19:57 by sede-san         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "colors.h"
+
+#ifndef ERRORS_H
+# define ERRORS_H
+
+# define ERROR_ARGS_MESSAGE "ERROR: Not enough arguments"
+
+typedef enum e_errors
+{
+	ERROR_ARGS = 1
+}			t_errors;
+
+static inline char	*ft_geterror(t_errors error_code)
+{
+	char	*error;
+
+	if (error_code == ERROR_ARGS)
+		error = ERROR_ARGS_MESSAGE;
+	return (error);
+}
+
+#endif
