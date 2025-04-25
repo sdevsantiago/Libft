@@ -6,11 +6,9 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:22:28 by sede-san          #+#    #+#             */
-/*   Updated: 2025/04/24 20:19:57 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/04/25 15:35:22 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "colors.h"
 
 #ifndef ERRORS_H
 # define ERRORS_H

@@ -6,12 +6,12 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 20:20:21 by sede-san          #+#    #+#             */
-/*   Updated: 2025/04/24 20:21:23 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/04/25 15:37:47 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef COLORS_H
- # define COLORS_H
+# define COLORS_H
 
 # define RESET "\033[0m"
 # define BOLD "\033[1m"
