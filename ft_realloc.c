@@ -19,7 +19,6 @@ void	*ft_realloc(void *ptr, size_t size)
 	new_ptr = (void *)malloc(size);
 	if (!new_ptr)
 		return (NULL);
-	ft_bzero(new_ptr, size);
 	if (ptr)
 	{
 		ft_memmove(new_ptr, ptr, size);
