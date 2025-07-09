@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/07/09 01:00:29 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/07/09 02:37:29 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@ int			ft_lstsize(t_list *lst);
 
 /* *************************** Aditional functions ************************** */
 
+void		ft_eputendl(char *s);
 void		ft_free(void **ptr);
 void		ft_putchar(char c);
 void		ft_putendl(char *s);
