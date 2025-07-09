@@ -6,7 +6,7 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2025/07/09 02:38:29 by sede-san         ###   ########.fr        #
+#    Updated: 2025/07/09 16:54:15 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,12 @@ CC = cc
 
 # Compilation flags
 CFLAGS = -Wall -Wextra -Werror
+
+DFLAGS = -g3
+
+ifeq ($(DEBUG), 1)
+	CFLAGS += $(DFLAGS)
+endif
 
 MAKE = make --no-print-directory
 
