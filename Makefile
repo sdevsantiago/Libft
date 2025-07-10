@@ -6,7 +6,7 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2025/07/10 18:17:34 by sede-san         ###   ########.fr        #
+#    Updated: 2025/07/10 18:23:04 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -115,6 +115,7 @@ SRC_A= \
     ft_dlstmap.c \
     ft_dlstnew.c \
     ft_dlstsize.c \
+	ft_eputchar.c \
 	ft_eputendl.c \
 	ft_eputstr.c \
 	ft_eputnbr.c \
