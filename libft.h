@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/07/10 01:05:21 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/07/10 03:05:26 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,7 @@ int			ft_lstsize(t_list *lst);
 
 void		ft_eputendl(char *s);
 void		ft_free(void **ptr);
+void		ft_free_split(char **splitted);
 void		ft_putchar(char c);
 void		ft_putendl(char *s);
 void		ft_puterror(t_errors err_num);
