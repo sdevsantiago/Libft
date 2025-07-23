@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/07/10 18:21:57 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/07/23 18:07:50 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <errno.h>
+# include <stdarg.h>
 # include <stddef.h>
 # include <stdio.h>
 # include <stdlib.h>
@@ -96,6 +97,7 @@ void		ft_putnbr(int n);
 void		ft_putstr(char *s);
 void		ft_swap(void *a, void *b);
 void		*ft_realloc(void *ptr, size_t size);
+int			ft_imin(int a, int b);
 int			ft_iscntrl(int c);
 int			ft_islower(int c);
 int			ft_isspace(int c);
