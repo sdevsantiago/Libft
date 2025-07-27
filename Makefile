@@ -6,7 +6,7 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2025/07/23 18:10:40 by sede-san         ###   ########.fr        #
+#    Updated: 2025/07/27 03:14:04 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,6 +87,7 @@ SRC_B= \
 
 # Aditional functions
 SRC_A= \
+	ft_atoi_base.c \
 	ft_atol.c \
 	ft_cdlstadd_back.c \
     ft_cdlstadd_front.c \

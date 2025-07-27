@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/07/23 18:07:50 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/07/27 03:05:06 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,11 @@ int			ft_lstsize(t_list *lst);
 
 /* *************************** Aditional functions ************************** */
 
+# define BIN_BASE "01"
+# define OCT_BASE "01234567"
+# define DEC_BASE "0123456789"
+# define HEX_BASE "0123456789ABCDEF"
+
 void		ft_eputchar(char c);
 void		ft_eputendl(char *s);
 void		ft_eputstr(char *s);
@@ -97,6 +102,7 @@ void		ft_putnbr(int n);
 void		ft_putstr(char *s);
 void		ft_swap(void *a, void *b);
 void		*ft_realloc(void *ptr, size_t size);
+int			ft_atoi_base(const char *str, const char *base);
 int			ft_imin(int a, int b);
 int			ft_iscntrl(int c);
 int			ft_islower(int c);
