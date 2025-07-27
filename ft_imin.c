@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 17:37:15 by sede-san          #+#    #+#             */
-/*   Updated: 2025/07/23 18:10:25 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/07/27 03:21:29 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
  *
  * @return The smaller of the two integer values.
  */
-int ft_imin(int a, int b)
+int	ft_imin(int a, int b)
 {
 	if (b < a)
 		return (b);

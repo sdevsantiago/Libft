@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 18:16:03 by sede-san          #+#    #+#             */
-/*   Updated: 2025/07/10 18:17:12 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/07/27 03:21:49 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,3 @@ void	ft_eputnbr(int n)
 {
 	ft_putnbr_fd(n, STDERR_FILENO);
 }
-
