@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/08/01 01:42:16 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/08/01 19:47:53 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,6 +108,7 @@ int			ft_iscntrl(int c);
 int			ft_islower(int c);
 int			ft_isspace(int c);
 int			ft_isupper(int c);
+int			ft_strisnum(char const *str);
 long		ft_atol(const char *str);
 char		*ft_itoa_base(int n, const char *base);
 char		*ft_ltoa(long n);
