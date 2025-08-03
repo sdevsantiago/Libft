@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/08/03 01:56:42 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/08/03 01:59:35 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,9 @@
 # include <stddef.h>
 # include <stdio.h>
 # include <stdlib.h>
+# include <limits.h>
 # ifdef __unix__
 #  include <linux/limits.h>
-# else
-#  include <limits.h>
 # endif
 # include <unistd.h>
 # include "errors.h"
