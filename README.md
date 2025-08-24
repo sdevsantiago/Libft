@@ -14,7 +14,15 @@
   <!-- Info badges -->
   <img src="https://img.shields.io/badge/Score-125%2F100-brightgreen?style=for-the-badge&labelColor=black" alt="Score">
   <img src="https://img.shields.io/badge/Language-C-blue?style=for-the-badge&labelColor=black" alt="Language">
+
   <img src="https://img.shields.io/github/last-commit/sdevsantiago/Libft?display_timestamp=committer&style=for-the-badge&labelColor=black" alt="Last commit">
+
+  <a href=".github/workflows/norminette.yml">
+    <img src="https://github.com/sdevsantiago/Libft/actions/workflows/norminette.yml/badge.svg">
+  </a>
+  <a href=".github/workflows/makefile.yml">
+    <img src="https://github.com/sdevsantiago/Libft/actions/workflows/makefile.yml/badge.svg">
+  </a>
 
 </div>
 
@@ -179,7 +187,7 @@ The code strictly complies with 42's **Norminette v4**:
 norminette *.c *.h
 ```
 
-More info in the official [norminette](https://github.com/42school/norminette) repository.
+More info in the official [Norminette](https://github.com/42school/norminette) repository.
 
 ## 🙇‍♂️ Special thanks
 
