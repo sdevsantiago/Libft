@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/08/03 01:59:35 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/08/24 19:03:50 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
 #  include <linux/limits.h>
 # endif
 # include <unistd.h>
-# include "errors.h"
 # include "colors.h"
 
 /* **************************** Part 1 functions **************************** */
@@ -100,7 +99,6 @@ void		ft_free(void **ptr);
 void		ft_free_split(char **splitted);
 void		ft_putchar(char c);
 void		ft_putendl(char *s);
-void		ft_puterror(t_errors err_num);
 void		ft_putnbr(int n);
 void		ft_putstr(char *s);
 void		ft_swap(void *a, void *b);

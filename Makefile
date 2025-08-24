@@ -6,7 +6,7 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2025/08/01 19:45:09 by sede-san         ###   ########.fr        #
+#    Updated: 2025/08/24 19:04:00 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -131,7 +131,6 @@ SRC_A= \
 	ft_ltoa.c \
 	ft_putchar.c \
 	ft_putendl.c \
-	ft_puterror.c \
 	ft_putnbr.c \
 	ft_putstr.c \
 	ft_realloc.c \
@@ -162,7 +161,7 @@ OBJ_A = $(SRC_A:.c=.o)
 
 # ********************************* Rules ************************************ #
 # Compile all
-all: $(NAME)
+all: $(NAME) bonus
 
 $(NAME): $(OBJ_MP1) $(OBJ_MP2) $(OBJ_A)
 	ar rcs $(NAME) $(OBJ_MP1) $(OBJ_MP2) $(OBJ_A)
