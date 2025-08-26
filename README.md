@@ -14,14 +14,11 @@
   <!-- Info badges -->
   <img src="https://img.shields.io/badge/Score-125%2F100-brightgreen?style=for-the-badge&labelColor=black" alt="Score">
   <img src="https://img.shields.io/badge/Language-C-blue?style=for-the-badge&labelColor=black" alt="Language">
-
+  <br>
   <img src="https://img.shields.io/github/last-commit/sdevsantiago/Libft?display_timestamp=committer&style=for-the-badge&labelColor=black" alt="Last commit">
-
-  <a href=".github/workflows/norminette.yml">
-    <img src="https://github.com/sdevsantiago/Libft/actions/workflows/norminette.yml/badge.svg">
-  </a>
-  <a href=".github/workflows/makefile.yml">
-    <img src="https://github.com/sdevsantiago/Libft/actions/workflows/makefile.yml/badge.svg">
+  <br>
+  <img src="https://github.com/sdevsantiago/Libft/actions/workflows/norminette.yml/badge.svg">
+  <img src="https://github.com/sdevsantiago/Libft/actions/workflows/makefile.yml/badge.svg">
   </a>
 
 </div>
