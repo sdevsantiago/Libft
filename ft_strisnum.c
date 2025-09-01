@@ -6,13 +6,13 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 19:33:49 by sede-san          #+#    #+#             */
-/*   Updated: 2025/08/01 19:46:08 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/09/01 18:57:12 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strisnum(char const *str)
+int	ft_strisnum(const char *str)
 {
 	size_t	i;
 

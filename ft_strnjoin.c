@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin_mul.c                                   :+:      :+:    :+:   */
+/*   ft_strnjoin.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 00:15:46 by sede-san          #+#    #+#             */
-/*   Updated: 2025/08/01 01:55:11 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/09/01 19:04:43 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@
  *       equal to 0, the function returns NULL.
  * @note The returned string must be freed later to avoid leaks.
  */
-char	*ft_strjoin_mul(int count, ...)
+char	*ft_strnjoin(int count, ...)
 {
 	va_list	args;
 	char	*result;
