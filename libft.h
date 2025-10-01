@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/09/01 19:10:41 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/10/01 13:45:53 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,6 +118,7 @@ char		*ft_strnjoin(int count, ...);
 char		*ft_uitoa(unsigned int n);
 char		*ft_uitoa_base(unsigned int n, const char *base);
 char		*ft_ultoa_base(unsigned long n, const char *base);
+char		**ft_nsplit(size_t l, const char *s, char c);
 
 // Doubly linked list
 typedef struct s_dlist
