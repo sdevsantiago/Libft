@@ -6,7 +6,7 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2025/10/01 13:44:42 by sede-san         ###   ########.fr        #
+#    Updated: 2025/10/15 21:52:20 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -135,6 +135,7 @@ SRC_A= \
 	ft_putnbr.c \
 	ft_putstr.c \
 	ft_realloc.c \
+	ft_strcmp.c \
 	ft_strisnum.c \
 	ft_strncpy.c \
 	ft_strnjoin.c \
