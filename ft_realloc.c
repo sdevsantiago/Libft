@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/06 22:19:17 by sede-san          #+#    #+#             */
-/*   Updated: 2025/07/06 22:43:30 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/10/29 10:18:33 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_realloc(void *ptr, size_t size)
 		return (NULL);
 	if (ptr)
 	{
-		ft_memmove(new_ptr, ptr, size);
+		ft_memcpy(new_ptr, ptr, size);
 		free(ptr);
 	}
 	return (new_ptr);
