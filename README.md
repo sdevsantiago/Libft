@@ -2,7 +2,7 @@
 
   <!-- Project badge -->
   <a href=".">
-    <img src="assets/README/libftm.png">
+    <img src=".github/README/libftm.png">
   </a>
 
   <!-- Project name -->
