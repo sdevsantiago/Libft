@@ -6,14 +6,13 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2025/11/02 21:42:15 by sede-san         ###   ########.fr        #
+#    Updated: 2025/11/02 21:53:09 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # ******************************* Output files ******************************* #
 
 NAME		= libft.a
-BONUS_NAME	= .bonus
 
 # ************************** Compilation variables *************************** #
 
@@ -204,8 +203,7 @@ OBJS		= $(SRC:$(SRC_PATH)/%.c=$(OBJS_PATH)/%.o)
 
 $(OBJS_PATH)/%.o: $(SRC_PATH)/%.c
 	@mkdir -p $(@D)
-	@$(CC) $(CFLAGS) $(HEADERS) -c $< -o $@
-	@$(PRINT) "$< compiled"
+	$(CC) $(CFLAGS) $(HEADERS) -c $< -o $@
 
 # ********************************* Rules ************************************ #
 
@@ -214,33 +212,14 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@ar rcs $(NAME) $(OBJS)
-	@$(PRINT) "$(GREEN)$(EMOJI_CHECK) $(NAME) ready. $(RESET)"
 
 clean:
 	@rm -rf $(OBJS_PATH)
-	@$(PRINT) "$(RED)$(EMOJI_BROOM) Object files removed.$(RESET)"
 .PHONY: clean
 
 fclean: clean
 	@rm -f $(NAME)
-	@$(PRINT) "$(RED)$(EMOJI_BROOM) Binaries removed.$(RESET)"
 .PHONY: fclean
 
 re: fclean all
 .PHONY: re
-
-# ***************************** Style variables ****************************** #
-
-PRINT	= printf "%b\n"
-
-RED		= \033[0;31m
-GREEN	= \033[0;32m
-YELLOW	= \033[0;33m
-BLUE	= \033[0;34m
-RESET	= \033[0m
-
-EMOJI_BROOM		= 🧹
-EMOJI_CHECK		= ✅
-EMOJI_CROSS		= ❌
-EMOJI_WRENCH	= 🔧
-EMOJI_BOX		= 📦
