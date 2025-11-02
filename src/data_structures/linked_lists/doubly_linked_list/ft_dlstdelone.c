@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_dlstdelone.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2025/01/20 12:44:17 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 20:38:47 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "doubly_linked_list.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
+/* Frees the node LST content using the function DEL.  */
+void	ft_dlstdelone(t_dlist *lst, void (*del)(void *))
+{
+	t_dlist	*node;
 
-#endif
+	if (!lst || !del)
+		return ;
+	node = lst;
+	lst = lst->next;
+	lst->previous = node->previous;
+	del(node->content);
+	free(node);
+}

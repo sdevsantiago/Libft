@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_imin.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2025/07/23 17:37:15 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 20:44:39 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "numbers.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
-
-#endif
+/**
+ * @brief Returns the minimum of two integer values.
+ *
+ * This function compares two integers and returns the smaller one.
+ *
+ * @param a First integer value.
+ * @param b Second integer value.
+ *
+ * @return The smaller of the two integer values.
+ */
+int	ft_imin(int a, int b)
+{
+	if (b < a)
+		return (b);
+	return (a);
+}

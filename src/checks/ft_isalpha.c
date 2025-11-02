@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2024/09/16 18:55:36 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 19:07:48 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "checks.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
-
-#endif
+/* Checks  if the passed number is a letter (uppercase or lowercase).  */
+int	ft_isalpha(int c)
+{
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+}

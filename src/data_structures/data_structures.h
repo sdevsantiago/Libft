@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   data_structures.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2025/11/02 18:32:43 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 18:43:46 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef DATA_STRUCTURES_H
+# define DATA_STRUCTURES_H
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
+# include "linked_lists.h"
 
-#endif
+#endif /* DATA_STRUCTURES_H */

@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_clstadd_front.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2025/01/22 12:27:33 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 20:35:51 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "circular_singly_linked_list.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
-
-#endif
+void	ft_clstadd_front(t_clist **lst, t_clist *new)
+{
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	(ft_clstlast(*lst))->next = new;
+	*lst = new;
+}

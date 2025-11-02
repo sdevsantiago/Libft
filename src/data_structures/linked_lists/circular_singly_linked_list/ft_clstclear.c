@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_clstclear.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2025/01/22 12:32:20 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 20:35:56 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "circular_singly_linked_list.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
+void	ft_clstclear(t_clist **lst, void (*del)(void *))
+{
+	t_clist	*first;
+	t_clist	*node;
 
-#endif
+	if (!lst || !del)
+		return ;
+	first = *lst;
+	while (*lst)
+	{
+		node = *lst;
+		ft_clstdelone(node, del);
+		if ((*lst)->next == first)
+			break ;
+		*lst = (*lst)->next;
+	}
+}

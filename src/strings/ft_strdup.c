@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2024/09/16 20:33:49 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 20:14:52 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "strings.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
+/*	Duplicates a string.  */
+char	*ft_strdup(const char *s)
+{
+	char	*s_dup;
+	int		i;
 
-#endif
+	s_dup = (char *)malloc(ft_strlen(s) + 1);
+	if (!s_dup)
+		return (NULL);
+	i = 0;
+	while (s[i])
+	{
+		s_dup[i] = s[i];
+		i++;
+	}
+	s_dup[i] = '\0';
+	return (s_dup);
+}

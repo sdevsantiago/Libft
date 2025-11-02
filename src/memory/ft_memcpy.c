@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2024/09/22 01:56:30 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 19:44:04 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "memory.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
+/* Copies N bytes from memory area SRC to memory area DEST.  */
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
+	const unsigned char	*src_ptr = (unsigned char *)src;
+	unsigned char		*dest_ptr;
 
-#endif
+	if (!dest && !src)
+		return (NULL);
+	dest_ptr = (unsigned char *)dest;
+	while (n--)
+		*dest_ptr++ = *src_ptr++;
+	return (dest);
+}

@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_dlstclear.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2025/01/19 18:33:47 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 20:38:41 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "doubly_linked_list.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
+/* Deletes from the node DLST onwards.  */
+void	ft_dlstclear(t_dlist **lst, void (*del)(void *))
+{
+	t_dlist	*node;
 
-#endif
+	if (!lst || !del)
+		return ;
+	while (*lst)
+	{
+		node = *lst;
+		*lst = (*lst)->next;
+		ft_dlstdelone(node, del);
+	}
+	*lst = NULL;
+}

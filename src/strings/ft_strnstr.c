@@ -1,25 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2024/09/22 18:23:12 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 20:21:46 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "strings.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
+char	*ft_strnstr(const char *big, const char *little, size_t len)
+{
+	unsigned int	i;
+	unsigned int	j;
 
-#endif
+	if (!(*little))
+		return ((char *)big);
+	while (*big && len)
+	{
+		i = 0;
+		j = 0;
+		while (big[i] == little[j] && big[i] && little[j] && len)
+		{
+			i++;
+			j++;
+			len--;
+		}
+		len += j;
+		if (!little[j])
+			return ((char *)big);
+		big++;
+		len--;
+	}
+	return (NULL);
+}

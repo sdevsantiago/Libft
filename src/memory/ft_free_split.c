@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_free_split.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2025/07/10 03:00:12 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 19:41:02 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "memory.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
+void	ft_free_split(char **splitted)
+{
+	size_t	i;
 
-#endif
+	i = 0;
+	while (splitted[i])
+	{
+		ft_bzero(splitted[i], ft_strlen(splitted[i]));
+		free(splitted[i]);
+		i++;
+	}
+	ft_bzero(splitted, (i + 1) * sizeof(char *));
+	free(splitted);
+}

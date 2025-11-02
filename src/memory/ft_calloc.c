@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2024/09/22 21:17:43 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 19:40:40 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "memory.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
+/* Allocates memory for an array of NMEMB elements of SIZE bytes each.
+   Each byte is set to 0.  */
+void	*ft_calloc(size_t nmemb, size_t size)
+{
+	void	*new_addr;
 
-#endif
+	new_addr = (void *)malloc(nmemb * size);
+	if (!new_addr)
+		return (NULL);
+	ft_bzero(new_addr, nmemb * size);
+	return (new_addr);
+}

@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_cdlstclear.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:52 by sede-san         ###   ########.fr       */
+/*   Created: 2025/01/22 19:35:25 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/02 20:32:18 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "circular_doubly_linked_list.h"
 
-# include "colors.h"
-# include "checks.h"
-# include "conversions.h"
-# include "data_structures.h"
-# include "memory.h"
-# include "numbers.h"
-# include "print.h"
-# include "strings.h"
+void	ft_cdlstclear(t_cdlist **lst, void (*del)(void*))
+{
+	t_cdlist	*current;
+	t_cdlist	*next;
+	t_cdlist	*head;
 
-#endif
+	if (!lst || !*lst || !del)
+		return ;
+	head = *lst;
+	current = *lst;
+	while (current)
+	{
+		next = current->next;
+		del(current->content);
+		free(current);
+		if (next == head)
+			break ;
+		current = next;
+	}
+	*lst = NULL;
+}
