@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 09:19:18 by sede-san          #+#    #+#             */
-/*   Updated: 2025/07/09 01:01:43 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/02 18:27:54 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 		len = s_len - start;
 	substr = malloc((sizeof (*substr) * len) + 1);
 	if (!substr)
-		return (errno = ENOMEM, NULL);
+		return (NULL);
 	s += start;
 	i = 0;
 	while (len-- && *s && i < s_len)
