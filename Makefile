@@ -6,7 +6,7 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2025/11/02 21:53:09 by sede-san         ###   ########.fr        #
+#    Updated: 2025/11/03 02:03:17 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,18 +18,6 @@ NAME		= libft.a
 
 CC		= cc
 CFLAGS	= -Wall -Wextra -Werror
-HEADERS	= -I $(INCLUDE_PATH)				\
-	-I $(CHECKS_PATH)						\
-	-I $(DATA_STRUCTURES_PATH)				\
-	-I $(LINKED_LISTS_PATH)					\
-	-I $(CIRCULAR_DOUBLY_LINKED_LIST_PATH)	\
-	-I $(CIRCULAR_SINGLY_LINKED_LIST_PATH)	\
-	-I $(DOUBLY_LINKED_LIST_PATH)			\
-	-I $(SINGLY_LINKED_LIST_PATH)			\
-	-I $(MEMORY_PATH)						\
-	-I $(NUMBERS_PATH)						\
-	-I $(PRINT_PATH)						\
-	-I $(STRINGS_PATH)
 
 ifeq ($(DEBUG), lldb) # debug with LLDB
 	CFLAGS	+= -g3
@@ -194,8 +182,6 @@ STRINGS_SRC		=					\
 	$(STRINGS_PATH)/ft_strtrim.c	\
 	$(STRINGS_PATH)/ft_substr.c
 
-INCLUDE_PATH	= include
-
 # ****************************** Object files ******************************** #
 
 OBJS_PATH	= build
@@ -203,7 +189,7 @@ OBJS		= $(SRC:$(SRC_PATH)/%.c=$(OBJS_PATH)/%.o)
 
 $(OBJS_PATH)/%.o: $(SRC_PATH)/%.c
 	@mkdir -p $(@D)
-	$(CC) $(CFLAGS) $(HEADERS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 # ********************************* Rules ************************************ #
 

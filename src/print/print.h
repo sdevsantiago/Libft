@@ -6,16 +6,16 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 19:47:16 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 21:35:32 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:00:42 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PRINT_H
 # define PRINT_H
 
-# include "strings.h"	// ft_strlen()
-# include <unistd.h>	// write(2), STDIN_FILENO, STDOUT_FILENO, STDERR_FILENO
-# include <limits.h>	// INT_MIN
+# include "../strings/strings.h"	// ft_strlen()
+# include <unistd.h>				// write(2), STDIN_FILENO, STDOUT_FILENO, STDERR_FILENO
+# include <limits.h>				// INT_MIN
 
 /******************************************************************************/
 /*                                 Functions                                  */

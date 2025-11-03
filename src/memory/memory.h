@@ -6,16 +6,16 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 19:38:47 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 21:34:06 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:00:26 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MEMORY_H
 # define MEMORY_H
 
-# include "strings.h"	// ft_strlen()
-# include <stddef.h>	// size_t, NULL
-# include <stdlib.h>	// malloc(3), free(3)
+# include "../strings/strings.h"	// ft_strlen()
+# include <stddef.h>				// size_t, NULL
+# include <stdlib.h>				// malloc(3), free(3)
 
 /******************************************************************************/
 /*                                 Functions                                  */

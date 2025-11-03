@@ -6,17 +6,17 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 19:58:42 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 21:37:04 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:00:59 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRINGS_H
 # define STRINGS_H
 
-# include "checks.h"	// ft_isdigit()
-# include <stdarg.h>	// va_list, va_start(3), va_arg(3), va_end(3)
-# include <stddef.h>	// size_t, NULL
-# include <stdlib.h>	// malloc(3), free(3)
+# include "../checks/checks.h"	// ft_isdigit()
+# include <stdarg.h>			// va_list, va_start(3), va_arg(3), va_end(3)
+# include <stddef.h>			// size_t, NULL
+# include <stdlib.h>			// malloc(3), free(3)
 
 /******************************************************************************/
 /*                                 Functions                                  */

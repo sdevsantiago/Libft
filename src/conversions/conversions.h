@@ -6,18 +6,18 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 19:09:15 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 21:24:51 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 01:59:15 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CONVERSIONS_H
 # define CONVERSIONS_H
 
-# include "checks.h"	// ft_isspace()
-# include "strings.h"	// ft_strlen(), ft_strchr
-# include <limits.h>	// INT_MIN, LONG_MIN
-# include <stddef.h>	// size_t, NULL
-# include <stdlib.h>	// malloc(3)
+# include "../checks/checks.h"		// ft_isspace()
+# include "../strings/strings.h"	// ft_strlen(), ft_strchr()
+# include <limits.h>				// INT_MIN, LONG_MIN
+# include <stddef.h>				// size_t, NULL
+# include <stdlib.h>				// malloc(3)
 
 # define BIN_BASE "01"
 # define OCT_BASE "01234567"
