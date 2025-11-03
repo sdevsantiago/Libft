@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 14:57:37 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 18:27:47 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/07/09 01:01:28 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char	**ft_split(const char *s, char c)
 		return (NULL);
 	s_split = (char **)malloc((count_words(s, c) + 1) * sizeof(*s_split));
 	if (!s_split)
-		return (NULL);
+		return (errno = ENOMEM, NULL);
 	row = 0;
 	while (*s)
 	{
@@ -69,7 +69,7 @@ char	**ft_split(const char *s, char c)
 		if (len)
 			s_split[row] = ft_substr(s, 0, len);
 		if (len && !s_split[row++])
-			return (free_matrix((void **)s_split), NULL);
+			return (errno = ENOMEM, free_matrix((void **)s_split), NULL);
 		s += len;
 	}
 	s_split[row] = NULL;
