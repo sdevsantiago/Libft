@@ -6,14 +6,13 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/10/31 01:33:41 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/02 18:27:39 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <errno.h>
 # include <stdarg.h>
 # include <stddef.h>
 # include <stdio.h>
