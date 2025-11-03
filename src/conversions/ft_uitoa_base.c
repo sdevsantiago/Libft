@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 20:31:15 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:33:36 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:08:47 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "conversions.h"
+#include "../libft.h"
 
 /* Counts the number of digits in the unsigned integer N with the base.  */
 static size_t	count_digits(unsigned int n, size_t base_len)

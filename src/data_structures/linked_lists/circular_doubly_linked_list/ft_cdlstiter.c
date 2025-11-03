@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 19:42:42 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:33:10 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:12:40 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "circular_doubly_linked_list.h"
+#include "../../../libft.h"
 
 void	ft_cdlstiter(t_cdlist *lst, void (*f)(void *))
 {

@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 01:56:30 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:44:04 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:09:47 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "memory.h"
+#include "../libft.h"
 
 /* Copies N bytes from memory area SRC to memory area DEST.  */
 void	*ft_memcpy(void *dest, const void *src, size_t n)

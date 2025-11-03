@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 20:44:16 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:18:02 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:22 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /* Applies the function F to each character of the string S.
    The passed string is not modified, all changes are applied to a copy.  */

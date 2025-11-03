@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 20:11:01 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:17:45 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:19 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /* Measures a string's length.  */
 size_t	ft_strlen(const char *s)

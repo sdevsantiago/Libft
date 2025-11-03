@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 18:55:36 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:07:48 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:07:51 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checks.h"
+#include "../libft.h"
 
 /* Checks  if the passed number is a letter (uppercase or lowercase).  */
 int	ft_isalpha(int c)

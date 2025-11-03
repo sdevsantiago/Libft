@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 13:20:23 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:38:53 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:13:35 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "doubly_linked_list.h"
+#include "../../../libft.h"
 
 /* Iterates the list LST and applies the function F to the
    content of each node. Applies the function DEL if needed.

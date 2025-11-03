@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 21:05:25 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 21:31:40 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:14:23 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "singly_linked_list.h"
+#include "../../../libft.h"
 
 /* Creates a new list with the value CONTENT.  */
 t_list	*ft_lstnew(void *content)

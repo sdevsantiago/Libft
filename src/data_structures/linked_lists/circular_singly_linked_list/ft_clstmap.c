@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 14:17:10 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:36:12 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:13:11 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "circular_singly_linked_list.h"
+#include "../../../libft.h"
 
 t_clist	*ft_clstmap(t_clist *lst, void *(*f)(void *), void (*del)(void *))
 {

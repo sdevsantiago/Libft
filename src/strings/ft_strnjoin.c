@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 00:15:46 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:19:08 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:33 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /**
  * @brief Joins multiple strings into a single newly allocated string.

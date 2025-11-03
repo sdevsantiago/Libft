@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 16:16:44 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:16:30 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:11 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /* Appends the NULL-terminated string S1 and the NULL-terminated string S2
    in a new string.  */

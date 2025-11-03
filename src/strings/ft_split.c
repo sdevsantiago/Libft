@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 14:57:37 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:02:30 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:10:53 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /* Counts the words in the string S using C as separator.  */
 static size_t	count_words(const char *s, char c)

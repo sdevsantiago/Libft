@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 12:48:29 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:59:23 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:10:49 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 static size_t	count_words(size_t l, const char *s, char c);
 static size_t	count_word_len(size_t l, const char *s, char c);

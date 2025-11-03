@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 19:42:09 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:08:51 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:08:19 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checks.h"
+#include "../libft.h"
 
 /* Checks if the passed character is uppercase.  */
 int	ft_isupper(int c)

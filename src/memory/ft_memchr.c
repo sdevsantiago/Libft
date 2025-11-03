@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 17:52:33 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:42:36 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:09:42 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "memory.h"
+#include "../libft.h"
 
 /* Scans the initial N bytes of the memory area pointed to by S for the first
    instance of C.  */

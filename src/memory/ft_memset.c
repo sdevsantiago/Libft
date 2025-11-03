@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 19:34:03 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:44:53 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:09:52 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "memory.h"
+#include "../libft.h"
 
 /* Fills the first N bytes of S with C.  */
 void	*ft_memset(void *s, int c, size_t n)

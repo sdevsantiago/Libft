@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 21:57:46 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 21:28:56 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:13:46 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "singly_linked_list.h"
+#include "../../../libft.h"
 
 /* Adds the node NEW to the last position of the list LST.  */
 void	ft_lstadd_back(t_list **lst, t_list *new)

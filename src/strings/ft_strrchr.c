@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 17:34:38 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:22:03 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:40 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /* Finds the last ocurrence of C in the string S.  */
 char	*ft_strrchr(const char *s, int c)

@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 13:33:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:17:15 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:17 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /* Copies a size-bounded string.  */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)

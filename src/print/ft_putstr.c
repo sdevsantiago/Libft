@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 19:57:24 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:58:39 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:10:36 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "print.h"
+#include "../libft.h"
 
 /* Prints a string.  */
 void	ft_putstr(char *s)

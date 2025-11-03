@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/27 01:04:36 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:22:18 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:08:25 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "conversions.h"
+#include "../libft.h"
 
 static int	get_value(const char c, const char *base);
 

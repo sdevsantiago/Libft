@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 19:54:17 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:33:18 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:08:45 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "conversions.h"
+#include "../libft.h"
 
 /* Converts a lowercase letter to uppercase.  */
 int	ft_toupper(int c)

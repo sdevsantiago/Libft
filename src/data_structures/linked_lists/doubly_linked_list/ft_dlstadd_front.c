@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 18:31:36 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:38:37 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:13:22 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "doubly_linked_list.h"
+#include "../../../libft.h"
 
 /* Adds the node NEW to the first position of the list DLST.  */
 void	ft_dlstadd_front(t_dlist **lst, t_dlist *new)

@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 20:27:39 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:22:46 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:43 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /* Erases any character from SET to the right and to the left of the
    string S1.  */

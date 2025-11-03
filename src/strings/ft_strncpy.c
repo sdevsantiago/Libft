@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 13:42:36 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:18:48 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:28 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /* Copies N characters of SRC in DEST. If N is bigger than SRC's length, the
    remaining N positions of DEST are filled with NULL.  */

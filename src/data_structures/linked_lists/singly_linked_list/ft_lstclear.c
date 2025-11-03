@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 09:51:59 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 21:29:51 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:13:53 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "singly_linked_list.h"
+#include "../../../libft.h"
 
 /* Deletes from the node LST onwards.  */
 void	ft_lstclear(t_list **lst, void (*del)(void *))

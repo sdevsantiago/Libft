@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 10:44:04 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:26:05 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:08:32 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "conversions.h"
+#include "../libft.h"
 
 /* Converts a string into an integer.  */
 long	ft_atol(const char *str)

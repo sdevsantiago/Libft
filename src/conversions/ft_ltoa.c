@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 00:54:33 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:29:47 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:08:40 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "conversions.h"
+#include "../libft.h"
 
 /* Counts the number of digits in the integer N.  */
 static size_t	count_digits(long n)

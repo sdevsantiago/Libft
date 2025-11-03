@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:35:31 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:44:34 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:09:50 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "memory.h"
+#include "../libft.h"
 
 /* Copies N bytes from memory area SRC to memory area DEST.
    This function is protected against overlapping.  */

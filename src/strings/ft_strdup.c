@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 20:33:49 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:14:52 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:03 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /*	Duplicates a string.  */
 char	*ft_strdup(const char *s)

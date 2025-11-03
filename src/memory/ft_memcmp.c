@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 20:22:42 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:43:04 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:09:44 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "memory.h"
+#include "../libft.h"
 
 /* Compares the first N bytes of the memory areas S1 and S2.  */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

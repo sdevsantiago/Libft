@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 12:59:02 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:16:49 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:14 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /* Appends the NUL-terminated string SRC to the end of DST.  */
 size_t	ft_strlcat(char *dst, const char *src, size_t size)

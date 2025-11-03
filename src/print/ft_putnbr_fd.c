@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 20:21:59 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:53:30 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:10:29 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "print.h"
+#include "../libft.h"
 
 /* Prints the number N in the FD given.  */
 void	ft_putnbr_fd(int n, int fd)

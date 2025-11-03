@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 21:31:44 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:14:48 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:00 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /**
  * @brief Compares two strings.

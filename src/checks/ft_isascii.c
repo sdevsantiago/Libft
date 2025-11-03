@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 19:38:09 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:07:52 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:07:55 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checks.h"
+#include "../libft.h"
 
 /* Checks if the passed character is within the 7-bit ASCII character set.  */
 int	ft_isascii(int c)

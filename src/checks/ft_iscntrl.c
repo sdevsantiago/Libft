@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 16:45:54 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:20:54 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:08:01 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checks.h"
+#include "../libft.h"
 
 /* Checks if the passed character is a control character.  */
 int	ft_iscntrl(int c)

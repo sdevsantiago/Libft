@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:13:02 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:26:24 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:08:35 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "conversions.h"
+#include "../libft.h"
 
 /* Counts the number of digits in the integer N with the base.  */
 static size_t	count_digits(int n, int base_len)

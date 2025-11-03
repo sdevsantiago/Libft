@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 16:46:34 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:38:51 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:13:32 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "doubly_linked_list.h"
+#include "../../../libft.h"
 
 /* Returns the last element of the list LST.  */
 t_dlist	*ft_dlstlast(t_dlist *lst)

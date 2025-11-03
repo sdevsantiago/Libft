@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 12:27:33 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:35:51 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:12:58 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "circular_singly_linked_list.h"
+#include "../../../libft.h"
 
 void	ft_clstadd_front(t_clist **lst, t_clist *new)
 {

@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 17:37:15 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:44:39 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:10:03 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "numbers.h"
+#include "../libft.h"
 
 /**
  * @brief Returns the minimum of two integer values.

@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 18:26:16 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:08:36 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:08:17 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checks.h"
+#include "../libft.h"
 
 /* Checks if the character is a white-space.  */
 int	ft_isspace(int c)

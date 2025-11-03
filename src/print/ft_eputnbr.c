@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 18:16:03 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:50:01 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:10:14 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "print.h"
+#include "../libft.h"
 
 void	ft_eputnbr(int n)
 {

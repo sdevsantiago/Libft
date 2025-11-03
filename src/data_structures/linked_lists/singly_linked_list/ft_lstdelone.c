@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 09:29:02 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 21:31:26 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:13:56 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "singly_linked_list.h"
+#include "../../../libft.h"
 
 /* Frees the node LST content using the function DEL.  */
 void	ft_lstdelone(t_list *lst, void (*del)(void *))

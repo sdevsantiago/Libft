@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 09:19:18 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:23:04 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:11:46 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strings.h"
+#include "../libft.h"
 
 /* Creates a NULL-terminating copy of the string S from the index START
    of LEN characters.  */

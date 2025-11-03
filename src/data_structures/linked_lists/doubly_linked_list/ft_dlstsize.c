@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 13:24:30 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 20:39:01 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:13:41 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "doubly_linked_list.h"
+#include "../../../libft.h"
 
 /* Measures a list.  */
 int	ft_dlstsize(t_dlist *lst)

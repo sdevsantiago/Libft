@@ -6,11 +6,11 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 21:17:43 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 19:40:40 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/03 02:09:22 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "memory.h"
+#include "../libft.h"
 
 /* Allocates memory for an array of NMEMB elements of SIZE bytes each.
    Each byte is set to 0.  */
