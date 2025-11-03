@@ -6,206 +6,187 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2025/11/03 02:03:17 by sede-san         ###   ########.fr        #
+#    Updated: 2025/10/15 21:52:20 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # ******************************* Output files ******************************* #
+# Library name
+NAME = libft.a
 
-NAME		= libft.a
+# Bonus functions relink check file
+BONUS_NAME = .bonus
 
 # ************************** Compilation variables *************************** #
+# Compiler
+CC = cc
 
-CC		= cc
-CFLAGS	= -Wall -Wextra -Werror
+# Compilation flags
+CFLAGS = -Wall -Wextra -Werror
 
-ifeq ($(DEBUG), lldb) # debug with LLDB
-	CFLAGS	+= -g3
-else ifeq ($(DEBUG), valgrind) # debug with valgrind
-	CFLAGS	+= -g3
-else ifeq ($(DEBUG), address) # use AdressSanitize
-	CFLAGS	+= -fsanitize=address -g3
-else # apply optimization flags if no debugging is being done
-	CFLAGS	+= -O3
+DFLAGS = -g3
+
+ifeq ($(DEBUG), 1)
+	CFLAGS += $(DFLAGS)
 endif
 
-MAKE	+= --no-print-directory
+MAKE = make --no-print-directory
 
 # ****************************** Source files ******************************** #
+# Mandatory part 1
+SRC_MP1= \
+	ft_atoi.c \
+	ft_bzero.c \
+	ft_calloc.c \
+	ft_isalnum.c \
+	ft_isalpha.c \
+	ft_isascii.c \
+	ft_isdigit.c \
+	ft_isprint.c \
+	ft_memchr.c \
+	ft_memcmp.c \
+	ft_memcpy.c \
+	ft_memmove.c \
+	ft_memset.c \
+	ft_strchr.c \
+	ft_strdup.c \
+	ft_strlcat.c \
+	ft_strlcpy.c \
+	ft_strlen.c \
+	ft_strncmp.c \
+	ft_strnstr.c \
+	ft_strrchr.c \
+	ft_tolower.c \
+	ft_toupper.c
 
-SRC_PATH	= src
-SRC			=				\
-	$(CHECKS_SRC)			\
-	$(CONVERSIONS_SRC)		\
-	$(DATA_STRUCTURES_SRC)	\
-	$(MEMORY_SRC)			\
-	$(NUMBERS_SRC)			\
-	$(PRINT_SRC)			\
-	$(STRINGS_SRC)
+# Mandatory part 2
+SRC_MP2= \
+	ft_itoa.c \
+	ft_putchar_fd.c \
+	ft_putendl_fd.c \
+	ft_putnbr_fd.c \
+	ft_putstr_fd.c \
+	ft_split.c \
+	ft_striteri.c \
+	ft_strjoin.c \
+	ft_strmapi.c \
+	ft_strtrim.c \
+	ft_substr.c
 
-CHECKS_PATH	= $(SRC_PATH)/checks
-CHECKS_SRC	= 					\
-	$(CHECKS_PATH)/ft_isalnum.c	\
-	$(CHECKS_PATH)/ft_isalpha.c	\
-	$(CHECKS_PATH)/ft_isascii.c	\
-	$(CHECKS_PATH)/ft_iscntrl.c	\
-	$(CHECKS_PATH)/ft_isdigit.c	\
-	$(CHECKS_PATH)/ft_islower.c	\
-	$(CHECKS_PATH)/ft_isprint.c	\
-	$(CHECKS_PATH)/ft_isspace.c	\
-	$(CHECKS_PATH)/ft_isupper.c
+# Bonus part
+SRC_B= \
+	ft_lstadd_back_bonus.c \
+	ft_lstadd_front_bonus.c \
+	ft_lstclear_bonus.c \
+	ft_lstdelone_bonus.c \
+	ft_lstiter_bonus.c \
+	ft_lstlast_bonus.c \
+	ft_lstmap_bonus.c \
+	ft_lstnew_bonus.c \
+	ft_lstsize_bonus.c
 
-CONVERSIONS_PATH	= $(SRC_PATH)/conversions
-CONVERSIONS_SRC		= 					\
-	$(CONVERSIONS_PATH)/ft_atoi_base.c	\
-	$(CONVERSIONS_PATH)/ft_atoi.c 		\
-	$(CONVERSIONS_PATH)/ft_atol.c 		\
-	$(CONVERSIONS_PATH)/ft_itoa_base.c 	\
-	$(CONVERSIONS_PATH)/ft_itoa.c 		\
-	$(CONVERSIONS_PATH)/ft_ltoa.c 		\
-	$(CONVERSIONS_PATH)/ft_tolower.c	\
-	$(CONVERSIONS_PATH)/ft_toupper.c	\
-	$(CONVERSIONS_PATH)/ft_uitoa_base.c	\
-	$(CONVERSIONS_PATH)/ft_uitoa.c		\
-	$(CONVERSIONS_PATH)/ft_ultoa_base.c	\
+# Aditional functions
+SRC_A= \
+	ft_atoi_base.c \
+	ft_atol.c \
+	ft_cdlstadd_back.c \
+    ft_cdlstadd_front.c \
+    ft_cdlstclear.c \
+    ft_cdlstdelone.c \
+    ft_cdlstiter.c \
+    ft_cdlstlast.c \
+    ft_cdlstmap.c \
+    ft_cdlstnew.c \
+    ft_cdlstsize.c \
+	ft_clstadd_back.c \
+    ft_clstadd_front.c \
+    ft_clstclear.c \
+    ft_clstdelone.c \
+    ft_clstiter.c \
+    ft_clstlast.c \
+    ft_clstmap.c \
+    ft_clstnew.c \
+    ft_clstsize.c \
+    ft_dlstadd_back.c \
+    ft_dlstadd_front.c \
+    ft_dlstclear.c \
+    ft_dlstdelone.c \
+    ft_dlstiter.c \
+    ft_dlstlast.c \
+    ft_dlstmap.c \
+    ft_dlstnew.c \
+    ft_dlstsize.c \
+	ft_eputchar.c \
+	ft_eputendl.c \
+	ft_eputstr.c \
+	ft_eputnbr.c \
+	ft_free.c \
+	ft_imin.c \
+	ft_free_split.c \
+	ft_iscntrl.c \
+	ft_islower.c \
+	ft_isspace.c \
+	ft_itoa_base.c \
+	ft_isupper.c \
+	ft_ltoa.c \
+	ft_nsplit.c \
+	ft_putchar.c \
+	ft_putendl.c \
+	ft_putnbr.c \
+	ft_putstr.c \
+	ft_realloc.c \
+	ft_strcmp.c \
+	ft_strisnum.c \
+	ft_strncpy.c \
+	ft_strnjoin.c \
+	ft_swap.c \
+	ft_uitoa.c \
+	ft_uitoa_base.c \
+	ft_ultoa_base.c
 
-DATA_STRUCTURES_PATH	= $(SRC_PATH)/data_structures
-DATA_STRUCTURES_SRC		= $(LINKED_LISTS_SRC)
+# ****************************** Object files ******************************** #z
+# Mandatory part 1
+OBJ_MP1 = $(SRC_MP1:.c=.o)
 
-LINKED_LISTS_PATH	= $(DATA_STRUCTURES_PATH)/linked_lists
-LINKED_LISTS_SRC	= 					\
-	$(CIRCULAR_DOUBLY_LINKED_LIST_SRC)	\
-	$(CIRCULAR_SINGLY_LINKED_LIST_SRC)	\
-	$(DOUBLY_LINKED_LIST_SRC)			\
-	$(SINGLY_LINKED_LIST_SRC)
+# Mandatory part 2
+OBJ_MP2 = $(SRC_MP2:.c=.o)
 
-CIRCULAR_DOUBLY_LINKED_LIST_PATH	= $(LINKED_LISTS_PATH)/circular_doubly_linked_list
-CIRCULAR_DOUBLY_LINKED_LIST_SRC		= \
-	$(CIRCULAR_DOUBLY_LINKED_LIST_PATH)/ft_cdlstadd_back.c	\
-	$(CIRCULAR_DOUBLY_LINKED_LIST_PATH)/ft_cdlstadd_front.c	\
-	$(CIRCULAR_DOUBLY_LINKED_LIST_PATH)/ft_cdlstclear.c		\
-	$(CIRCULAR_DOUBLY_LINKED_LIST_PATH)/ft_cdlstdelone.c	\
-	$(CIRCULAR_DOUBLY_LINKED_LIST_PATH)/ft_cdlstiter.c		\
-	$(CIRCULAR_DOUBLY_LINKED_LIST_PATH)/ft_cdlstlast.c		\
-	$(CIRCULAR_DOUBLY_LINKED_LIST_PATH)/ft_cdlstmap.c		\
-	$(CIRCULAR_DOUBLY_LINKED_LIST_PATH)/ft_cdlstnew.c		\
-	$(CIRCULAR_DOUBLY_LINKED_LIST_PATH)/ft_cdlstsize.c
+# Bonus part
+OBJ_B = $(SRC_B:.c=.o)
 
-CIRCULAR_SINGLY_LINKED_LIST_PATH	= $(LINKED_LISTS_PATH)/circular_singly_linked_list
-CIRCULAR_SINGLY_LINKED_LIST_SRC		= \
-	$(CIRCULAR_SINGLY_LINKED_LIST_PATH)/ft_clstadd_back.c	\
-	$(CIRCULAR_SINGLY_LINKED_LIST_PATH)/ft_clstadd_front.c	\
-	$(CIRCULAR_SINGLY_LINKED_LIST_PATH)/ft_clstclear.c		\
-	$(CIRCULAR_SINGLY_LINKED_LIST_PATH)/ft_clstdelone.c		\
-	$(CIRCULAR_SINGLY_LINKED_LIST_PATH)/ft_clstiter.c		\
-	$(CIRCULAR_SINGLY_LINKED_LIST_PATH)/ft_clstlast.c		\
-	$(CIRCULAR_SINGLY_LINKED_LIST_PATH)/ft_clstmap.c		\
-	$(CIRCULAR_SINGLY_LINKED_LIST_PATH)/ft_clstnew.c		\
-	$(CIRCULAR_SINGLY_LINKED_LIST_PATH)/ft_clstsize.c
+# Aditional functions
+OBJ_A = $(SRC_A:.c=.o)
 
-DOUBLY_LINKED_LIST_PATH	= $(LINKED_LISTS_PATH)/doubly_linked_list
-DOUBLY_LINKED_LIST_SRC	= 							\
-	$(DOUBLY_LINKED_LIST_PATH)/ft_dlstadd_back.c	\
-	$(DOUBLY_LINKED_LIST_PATH)/ft_dlstadd_front.c	\
-	$(DOUBLY_LINKED_LIST_PATH)/ft_dlstclear.c		\
-	$(DOUBLY_LINKED_LIST_PATH)/ft_dlstdelone.c		\
-	$(DOUBLY_LINKED_LIST_PATH)/ft_dlstiter.c		\
-	$(DOUBLY_LINKED_LIST_PATH)/ft_dlstlast.c		\
-	$(DOUBLY_LINKED_LIST_PATH)/ft_dlstmap.c			\
-	$(DOUBLY_LINKED_LIST_PATH)/ft_dlstnew.c			\
-	$(DOUBLY_LINKED_LIST_PATH)/ft_dlstsize.c
-
-SINGLY_LINKED_LIST_PATH	= $(LINKED_LISTS_PATH)/singly_linked_list
-SINGLY_LINKED_LIST_SRC	= 							\
-	$(SINGLY_LINKED_LIST_PATH)/ft_lstadd_back.c		\
-	$(SINGLY_LINKED_LIST_PATH)/ft_lstadd_front.c	\
-	$(SINGLY_LINKED_LIST_PATH)/ft_lstclear.c		\
-	$(SINGLY_LINKED_LIST_PATH)/ft_lstdelone.c		\
-	$(SINGLY_LINKED_LIST_PATH)/ft_lstiter.c			\
-	$(SINGLY_LINKED_LIST_PATH)/ft_lstlast.c			\
-	$(SINGLY_LINKED_LIST_PATH)/ft_lstmap.c			\
-	$(SINGLY_LINKED_LIST_PATH)/ft_lstnew.c			\
-	$(SINGLY_LINKED_LIST_PATH)/ft_lstsize.c
-
-MEMORY_PATH	= $(SRC_PATH)/memory
-MEMORY_SRC	=						\
-	$(MEMORY_PATH)/ft_bzero.c		\
-	$(MEMORY_PATH)/ft_calloc.c		\
-	$(MEMORY_PATH)/ft_free_split.c	\
-	$(MEMORY_PATH)/ft_free.c		\
-	$(MEMORY_PATH)/ft_memchr.c		\
-	$(MEMORY_PATH)/ft_memcmp.c		\
-	$(MEMORY_PATH)/ft_memcpy.c		\
-	$(MEMORY_PATH)/ft_memmove.c		\
-	$(MEMORY_PATH)/ft_memset.c		\
-	$(MEMORY_PATH)/ft_realloc.c		\
-	$(MEMORY_PATH)/ft_swap.c
-
-NUMBERS_PATH	= $(SRC_PATH)/numbers
-NUMBERS_SRC		= 				\
-	$(NUMBERS_PATH)/ft_imin.c
-
-PRINT_PATH	= $(SRC_PATH)/print
-PRINT_SRC	= 						\
-	$(PRINT_PATH)/ft_eputchar.c		\
-	$(PRINT_PATH)/ft_eputendl.c		\
-	$(PRINT_PATH)/ft_eputnbr.c		\
-	$(PRINT_PATH)/ft_eputstr.c		\
-	$(PRINT_PATH)/ft_putchar_fd.c	\
-	$(PRINT_PATH)/ft_putchar.c		\
-	$(PRINT_PATH)/ft_putendl_fd.c	\
-	$(PRINT_PATH)/ft_putendl.c		\
-	$(PRINT_PATH)/ft_putnbr_fd.c	\
-	$(PRINT_PATH)/ft_putnbr.c		\
-	$(PRINT_PATH)/ft_putstr_fd.c	\
-	$(PRINT_PATH)/ft_putstr.c
-
-STRINGS_PATH	= $(SRC_PATH)/strings
-STRINGS_SRC		=					\
-	$(STRINGS_PATH)/ft_nsplit.c		\
-	$(STRINGS_PATH)/ft_split.c		\
-	$(STRINGS_PATH)/ft_strchr.c		\
-	$(STRINGS_PATH)/ft_strcmp.c		\
-	$(STRINGS_PATH)/ft_strdup.c		\
-	$(STRINGS_PATH)/ft_strisnum.c	\
-	$(STRINGS_PATH)/ft_striteri.c	\
-	$(STRINGS_PATH)/ft_strjoin.c	\
-	$(STRINGS_PATH)/ft_strlcat.c	\
-	$(STRINGS_PATH)/ft_strlcpy.c	\
-	$(STRINGS_PATH)/ft_strlen.c		\
-	$(STRINGS_PATH)/ft_strmapi.c	\
-	$(STRINGS_PATH)/ft_strncmp.c	\
-	$(STRINGS_PATH)/ft_strncpy.c	\
-	$(STRINGS_PATH)/ft_strnjoin.c	\
-	$(STRINGS_PATH)/ft_strnstr.c	\
-	$(STRINGS_PATH)/ft_strrchr.c	\
-	$(STRINGS_PATH)/ft_strtrim.c	\
-	$(STRINGS_PATH)/ft_substr.c
-
-# ****************************** Object files ******************************** #
-
-OBJS_PATH	= build
-OBJS		= $(SRC:$(SRC_PATH)/%.c=$(OBJS_PATH)/%.o)
-
-$(OBJS_PATH)/%.o: $(SRC_PATH)/%.c
-	@mkdir -p $(@D)
+# Compile object files
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # ********************************* Rules ************************************ #
+# Compile all
+all: $(NAME) bonus
 
-all: $(NAME)
-.PHONY: all
+$(NAME): $(OBJ_MP1) $(OBJ_MP2) $(OBJ_A)
+	ar rcs $(NAME) $(OBJ_MP1) $(OBJ_MP2) $(OBJ_A)
 
-$(NAME): $(OBJS)
-	@ar rcs $(NAME) $(OBJS)
+# Compile bonus
+bonus: $(BONUS_NAME)
 
+$(BONUS_NAME): $(OBJ_B)
+	ar rcs $(NAME) $(OBJ_B)
+	touch $(BONUS_NAME)
+
+# Clean object files
 clean:
-	@rm -rf $(OBJS_PATH)
-.PHONY: clean
+	rm -f $(OBJ_MP1) $(OBJ_MP2) $(OBJ_B) $(OBJ_A)
 
+# Clean bonus and library
 fclean: clean
-	@rm -f $(NAME)
-.PHONY: fclean
+	rm -f $(NAME)
+	rm -f $(BONUS_NAME)
+	rm -f $(OBJ_B)
 
+# Recompile
 re: fclean all
-.PHONY: re
+
+# *********************************** Phony ********************************** #
+.PHONY = all bonus .bonus clean fclean re
