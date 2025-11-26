@@ -6,7 +6,7 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2025/10/15 21:52:20 by sede-san         ###   ########.fr        #
+#    Updated: 2025/11/26 09:59:39 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -121,6 +121,7 @@ SRC_A= \
 	ft_eputstr.c \
 	ft_eputnbr.c \
 	ft_free.c \
+	ft_hashstr.c \
 	ft_imin.c \
 	ft_free_split.c \
 	ft_iscntrl.c \
@@ -130,6 +131,7 @@ SRC_A= \
 	ft_isupper.c \
 	ft_ltoa.c \
 	ft_nsplit.c \
+	ft_pow.c \
 	ft_putchar.c \
 	ft_putendl.c \
 	ft_putnbr.c \

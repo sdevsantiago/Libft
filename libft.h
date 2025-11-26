@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/02 18:27:39 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/26 10:01:52 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,6 +104,7 @@ extern void		ft_putstr(char *s);
 extern void		ft_swap(void *a, void *b);
 extern void		*ft_realloc(void *ptr, size_t size);
 extern int		ft_atoi_base(const char *str, const char *base);
+extern int		ft_hashstr(const char *str);
 extern int		ft_imin(int a, int b);
 extern int		ft_iscntrl(int c);
 extern int		ft_islower(int c);
@@ -112,6 +113,7 @@ extern int		ft_isupper(int c);
 extern int		ft_strcmp(const char *s1, const char *s2);
 extern int		ft_strisnum(const char *str);
 extern long		ft_atol(const char *str);
+extern double	ft_pow(double base, double exponent);
 extern char		*ft_itoa_base(int n, const char *base);
 extern char		*ft_ltoa(long n);
 extern char		*ft_strncpy(char *dest, const char *src, size_t n);
