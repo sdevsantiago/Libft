@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 10:59:21 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/27 20:49:46 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/28 13:32:44 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,7 @@ void	*ft_hashmap_put(
 	t_list		*node;
 	t_map_entry	*entry;
 
-	if (hashmap == NULL || key == NULL || hashmap->capacity < 1
-		|| hashmap->hash_func == NULL || hashmap->comp_func == NULL)
+	if (hashmap == NULL || key == NULL || hashmap->capacity < 1)
 		return (NULL);
 	key_hash = ft_iabs(hashmap->hash_func(key) % hashmap->capacity);
 	node = hashmap->buckets[key_hash];
@@ -69,6 +68,22 @@ void	*ft_hashmap_put(
 	return (NULL);
 }
 
+/**
+ * @brief Replaces the value of an existing map entry with a new value.
+ *
+ * This function updates the value field of a given map entry, storing the
+ * new value and returning the previous value that was replaced. This allows
+ * the caller to handle or free the old value as needed.
+ *
+ * @param new_value Pointer to the new value to store in the entry
+ * @param entry     Pointer to the map entry whose value will be replaced
+ *
+ * @warning The caller is responsible of handling the old value, this includes
+ *          freeing the memory.
+ *
+ * @return Pointer to the old value that was replaced, or NULL if the entry
+ *         had no previous value.
+ */
 static void	*replace_value(
 	void *new_value,
 	t_map_entry *entry

@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 20:26:41 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/27 19:30:21 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/27 23:56:05 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,21 +28,20 @@ int	ft_hashmap_contains_key(
 	t_hashmap *hashmap,
 	const void *key
 ) {
-	int		contains;
-	int		key_hash;
-	t_list	*list;
+	int			key_hash;
+	t_list		*list;
+	t_map_entry	*entry;
 
 	if (hashmap == NULL || hashmap->capacity < 1 || key == NULL)
 		return (0);
 	key_hash = ft_iabs(hashmap->hash_func(key) % hashmap->capacity);
 	list = hashmap->buckets[key_hash];
-	contains = 0;
-	while (contains == 0 && list != NULL)
+	while (list != NULL)
 	{
-		if (hashmap->comp_func(key, ((t_map_entry *)list->content)->key) == 0)
-			contains = 1;
-		else
-			list = list->next;
+		entry = (t_map_entry *)list->content;
+		if (hashmap->comp_func(key, entry->key) == 0)
+			return (1);
+		list = list->next;
 	}
-	return (contains);
+	return (0);
 }
