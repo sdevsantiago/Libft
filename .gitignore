@@ -4,6 +4,9 @@
 # Build path
 build/
 
+# Bonus file check
+.bonus
+
 # Prerequisites
 *.d
 
