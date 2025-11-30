@@ -6,7 +6,7 @@
 #    By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/03 19:12:48 by sede-san          #+#    #+#              #
-#    Updated: 2025/11/27 18:56:38 by sede-san         ###   ########.fr        #
+#    Updated: 2025/11/30 03:16:19 by sede-san         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -124,9 +124,11 @@ SRC_A= \
 	ft_hashmap_clear.c \
 	ft_hashmap_contains_key.c \
 	ft_hashmap_get.c \
+	ft_hashmap_hashstr.c \
 	ft_hashmap_new.c \
 	ft_hashmap_put.c \
 	ft_hashmap_remove.c \
+	ft_hashmap_strcmp.c \
 	ft_hashstr.c \
 	ft_iabs.c \
 	ft_imin.c \
