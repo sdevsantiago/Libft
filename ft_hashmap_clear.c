@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 16:28:36 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/28 01:07:59 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/30 03:13:15 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static void	clear_entry(t_map_entry *entry, void (*del)(void *));
  * @note After this function is called, the hashmap pointer becomes invalid
  */
 void	ft_hashmap_clear(
-	t_hashmap *hashmap,
+	t_hashmap **hashmap,
 	void (*del)(void *)
 ) {
 	size_t		i;
@@ -41,12 +41,12 @@ void	ft_hashmap_clear(
 	t_list		*node;
 	t_map_entry	*entry;
 
-	if (hashmap == NULL || del == NULL)
+	if (hashmap == NULL || *hashmap == NULL || del == NULL)
 		return ;
 	i = -1;
-	while (++i < hashmap->capacity)
+	while (++i < (*hashmap)->capacity)
 	{
-		list = hashmap->buckets[i];
+		list = (*hashmap)->buckets[i];
 		while (list != NULL)
 		{
 			node = list;
@@ -56,9 +56,9 @@ void	ft_hashmap_clear(
 			free(node);
 		}
 	}
-	free(hashmap->buckets);
-	free(hashmap);
-	hashmap = NULL;
+	free((*hashmap)->buckets);
+	free(*hashmap);
+	*hashmap = NULL;
 }
 
 /**

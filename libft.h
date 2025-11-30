@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/28 15:18:39 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/30 03:14:34 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -213,7 +213,7 @@ typedef struct s_hashmap
 	 */
 }	t_hashmap;
 
-extern void			ft_hashmap_clear(t_hashmap *hashmap, void (*del)(void *));
+extern void			ft_hashmap_clear(t_hashmap **hashmap, void (*del)(void *));
 extern void			*ft_hashmap_get(t_hashmap *hashmap, const void *key);
 extern void			*ft_hashmap_put(t_hashmap *hashmap, const void *key,
 						void *new_value);
