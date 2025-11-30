@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hashmap_lstclear.c                              :+:      :+:    :+:   */
+/*   ft_lstclear_nodes.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/30 03:05:19 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/30 03:07:33 by sede-san         ###   ########.fr       */
+/*   Created: 2025/11/30 03:46:03 by sede-san          #+#    #+#             */
+/*   Updated: 2025/11/30 03:50:18 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_hashmap_lstclear(
+static void	no_del_content(void *content);
+
+void	ft_lstclear_nodes(
 	t_list **lst
 ) {
-	t_list	*node;
+	ft_lstclear(lst, no_del_content);
+}
 
-	if (!lst)
-		return ;
-	while (*lst)
-	{
-		node = *lst;
-		*lst = (*lst)->next;
-		free(node);
-	}
-	*lst = NULL;
+static void	no_del_content(
+	void *content
+) {
+	(void)content;
 }

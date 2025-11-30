@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 18:08:13 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/30 03:25:13 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/30 03:52:34 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ t_list	*ft_hashmap_entries(
 			new_node = ft_lstnew(node->content);
 			if (new_node == NULL)
 			{
-				ft_hashmap_lstclear(&entries);
+				ft_lstclear_nodes(&entries);
 				return (NULL);
 			}
 			ft_lstadd_front(&entries, new_node);

@@ -6,7 +6,7 @@
 /*   By: sede-san <sede-san@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:40:58 by sede-san          #+#    #+#             */
-/*   Updated: 2025/11/30 03:17:21 by sede-san         ###   ########.fr       */
+/*   Updated: 2025/11/30 03:58:04 by sede-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,7 @@ extern t_list		*ft_lstnew(void *content);
 extern void			ft_lstadd_back(t_list **lst, t_list *new);
 extern void			ft_lstadd_front(t_list **lst, t_list *new);
 extern void			ft_lstclear(t_list **lst, void (*del)(void *));
+extern void			ft_lstclear_nodes(t_list **lst);
 extern void			ft_lstdelone(t_list *lst, void (*del)(void *));
 extern void			ft_lstiter(t_list *lst, void (*f)(void *));
 extern int			ft_lstsize(t_list *lst);
@@ -213,8 +214,9 @@ typedef struct s_hashmap
 	 */
 }	t_hashmap;
 
+extern t_hashmap	*ft_hashmap_new(size_t initial_capacity,
+						t_hash_func hash_func, t_comp_func comp_func);
 extern void			ft_hashmap_clear(t_hashmap **hashmap, void (*del)(void *));
-extern void			ft_hashmap_lstclear(t_list **lst);
 extern void			*ft_hashmap_get(t_hashmap *hashmap, const void *key);
 extern void			*ft_hashmap_put(t_hashmap *hashmap, const void *key,
 						void *new_value);
@@ -223,8 +225,6 @@ extern int			ft_hashmap_contains_key(t_hashmap *hashmap,
 						const void *key);
 extern int			ft_hashmap_hashstr(const void *str);
 extern int			ft_hashmap_strcmp(const void *s1, const void *s2);
-extern t_hashmap	*ft_hashmap_new(size_t initial_capacity,
-						t_hash_func hash_func, t_comp_func comp_func);
 extern t_list		*ft_hashmap_entries(t_hashmap *hashmap);
 
 #endif
